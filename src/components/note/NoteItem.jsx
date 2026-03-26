@@ -5,7 +5,7 @@ export default function NoteItem(props) {
     <li className="note">
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <button>
+      <button onClick={props.onDeleteNote}>
         <BackspaceIcon />
       </button>
     </li>
